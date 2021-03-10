@@ -1,4 +1,15 @@
 images:
+  gudmap-rbk_base:
+    1.0.0:
+      children:
+      - python3:1.0.0
+      parents: []
+  python3:
+    1.0.0:
+      children:
+      - null
+      parents:
+      - gudmap-rbk_base:1.0.0
   ubuntu:
     '18.04':
       children:
@@ -17,5 +28,6 @@ images:
       parents:
       - ubuntu:18.04
 latest:
+  python3: 1.0.0
   vsmbase: 1.0.1
 terminated: {}
