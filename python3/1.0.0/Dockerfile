@@ -1,5 +1,5 @@
 
-FROM gudmaprbk/gudmap-rbk_base:1.0.0
+FROM vsmalladi/vsmbase:1.0.0
 LABEL author="Gervaise H. Henry"
 
 RUN apt-get install -y python3 python3-pip
