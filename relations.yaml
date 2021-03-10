@@ -3,6 +3,7 @@ images:
     '18.04':
       children:
       - vsmbase:1.0.0
+      - vsmbase:1.0.1
       parents: []
   vsmbase:
     1.0.0:
@@ -10,6 +11,11 @@ images:
       - null
       parents:
       - ubuntu:18.04
+    1.0.1:
+      children:
+      - null
+      parents:
+      - ubuntu:18.04
 latest:
-  vsmbase: 1.0.0
+  vsmbase: 1.0.1
 terminated: {}
