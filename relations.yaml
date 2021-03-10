@@ -1,3 +1,15 @@
-images: {}
-latest: {}
+images:
+  ubuntu:
+    '18.04':
+      children:
+      - vsmbase:1.0.0
+      parents: []
+  vsmbase:
+    1.0.0:
+      children:
+      - null
+      parents:
+      - ubuntu:18.04
+latest:
+  vsmbase: 1.0.0
 terminated: {}
