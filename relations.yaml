@@ -1,4 +1,15 @@
 images:
+  havoc:
+    1.0.0:
+      children:
+      - null
+      parents:
+      - miniconda3:latest
+  miniconda3:
+    latest:
+      children:
+      - havoc:1.0.0
+      parents: []
   python3:
     1.0.0:
       children:
@@ -23,6 +34,7 @@ images:
       parents:
       - ubuntu:18.04
 latest:
+  havoc: 1.0.0
   python3: 1.0.0
   vsmbase: 1.0.1
 terminated: {}
