@@ -7,7 +7,7 @@ RUN conda config --add channels defaults && \
   conda update -n base -c defaults -y conda
 
 
-RUN conda install "samtools>=1.10"
+RUN conda install -c bioconda samtools=1.9 --force-reinstall
 RUN conda install bcftools
 RUN conda install bedtools
 RUN conda install bowtie2
