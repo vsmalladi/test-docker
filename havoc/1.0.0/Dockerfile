@@ -6,6 +6,7 @@ RUN conda config --add channels defaults && \
   conda config --add channels conda-forge && \
   conda update -n base -c defaults -y conda
 
+Run apt-get install libssl1.0.0 libssl-dev
 RUN conda install bcftools
 RUN conda install bedtools
 RUN conda install bowtie2
@@ -13,6 +14,7 @@ RUN conda install bwa
 RUN conda install fastp==0.23.1
 RUN conda install lofreq
 RUN conda install sambamba
-RUN conda install -c bioconda samtools==1.9 openssl=1.0
+RUN conda install samtools==1.9
+RUN conda install openssl==1.0
 RUN conda install trimmomatic
 RUN conda install pangolin
