@@ -7,6 +7,7 @@ RUN conda config --add channels defaults && \
   conda update -n base -c defaults -y conda
 
 
+RUN conda install samtools=1.11 openssl=1.0
 RUN conda install bcftools
 RUN conda install bedtools
 RUN conda install bowtie2
