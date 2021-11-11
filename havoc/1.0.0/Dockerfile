@@ -1,6 +1,9 @@
 FROM continuumio/miniconda3:latest
 LABEL author="Venkat S. Malladi"
 
+
+RUN apt-get install libssl1.0.0 libssl-dev
+
 RUN conda config --add channels defaults && \
   conda config --add channels bioconda && \
   conda config --add channels conda-forge && \
