@@ -1,5 +1,5 @@
 FROM continuumio/miniconda3:latest
-LABEL author="Venkat S. Malladi"
+LABEL author="Venkat Malladi"
 
 RUN conda config --add channels defaults && \
   conda config --add channels bioconda && \
