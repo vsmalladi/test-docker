@@ -37,9 +37,10 @@ RUN conda install bedtools
 RUN conda install bowtie2
 RUN conda install bwa
 RUN conda install fastp=0.23.1
-RUN conda install samtools=1.9
+RUN conda install samtools
 RUN conda install sambamba
 RUN conda install trimmomatic
 RUN conda install pangolin=3.1.17
 RUN conda install lofreq
+RUN ln -s /opt/conda/lib/libcrypto.so /opt/conda/lib/libcrypto.so.1.0.0
 
