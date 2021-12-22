@@ -42,5 +42,4 @@ RUN conda install sambamba
 RUN conda install trimmomatic
 RUN conda install pangolin
 RUN conda install lofreq
-RUN ln -s /opt/conda/lib/libcrypto.so /opt/conda/lib/libcrypto.so.1.0.0
 
