@@ -11,7 +11,7 @@ RUN conda install bedtools
 RUN conda install bowtie2
 RUN conda install bwa
 RUN conda install fastp=0.23.1
-RUN conda install samtools=1.9
+RUN conda install samtools=1.14
 RUN conda install lofreq
 RUN conda install sambamba
 RUN conda install trimmomatic
