@@ -1,4 +1,4 @@
-FROM ubuntu:20.10
+FROM ubuntu:20.04
 LABEL author="Venkat S. Malladi"
 
 ENV DEBIAN_FRONTEND=noninteractive
