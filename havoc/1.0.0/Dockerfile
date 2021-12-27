@@ -21,8 +21,8 @@ ENV LANG=C.UTF-8
 RUN apt-get install -y python3 python3-pip
 
 RUN wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Linux-x86_64.sh && \
-  bash Miniconda3-latest-Linux-x86_64.sh -p /miniconda -b && \
-  rm Miniconda3-latest-Linux-x86_64.sh
+  bash Miniconda3-py37_4.10.3-Linux-x86_64.sh -p /miniconda -b && \
+  rm Miniconda3-py37_4.10.3-Linux-x86_64.sh
 ENV PATH=/miniconda/bin:${PATH}
 
 RUN pip3 install --upgrade pip
