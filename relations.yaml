@@ -4,7 +4,7 @@ images:
       children:
       - null
       parents:
-      - ubuntu:20.10
+      - ubuntu:20.04
   python3:
     1.0.0:
       children:
@@ -17,7 +17,7 @@ images:
       - vsmbase:1.0.0
       - vsmbase:1.0.1
       parents: []
-    '20.10':
+    '20.04':
       children:
       - havoc:1.0.0
       parents: []
