@@ -29,7 +29,6 @@ RUN pip3 install --upgrade pip
 
 RUN conda config --add channels defaults && \
   conda config --add channels bioconda && \
-  conda config --add channels conda-forge && \
   conda update -n base -c defaults -y conda
 
 RUN conda install bcftools
