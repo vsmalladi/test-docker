@@ -16,5 +16,6 @@ RUN conda install samtools=1.14
 RUN conda install sambamba=0.8.1
 RUN conda install trimmomatic=0.39
 RUN conda install pangolin=3.1.17
+RUN ln -s /opt/conda/lib/libcrypto.so /opt/conda/lib/libcrypto.so.1.0.0
 
 
