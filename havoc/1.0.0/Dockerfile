@@ -1,10 +1,10 @@
 FROM continuumio/miniconda3:latest
 LABEL author="Venkat S. Malladi"
 
-RUN conda config --add channels defaults && \
-  conda config --add channels bioconda && \
+
+RUN  conda config --add channels bioconda && \
   conda config --add channels conda-forge && \
-  conda update -n base -c defaults -y conda
+  conda update -n base -y conda
 
 RUN conda install bedtools
 RUN conda install bowtie2
