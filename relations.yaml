@@ -4,9 +4,9 @@ images:
       children:
       - null
       parents:
-      - miniconda3:latest
+      - miniconda3:4.9.2-alpine
   miniconda3:
-    latest:
+    4.9.2-alpine:
       children:
       - havoc:1.0.0
       parents: []
