@@ -1,6 +1,7 @@
-FROM continuumio/miniconda3:latest
+FROM continuumio/miniconda3:4.9.2-alpine
 LABEL author="Venkat S. Malladi"
 
+RUN apk update && apk add git bash
 
 RUN  conda config --add channels bioconda && \
   conda config --add channels conda-forge && \
@@ -15,5 +16,7 @@ RUN conda install bcftools
 RUN conda install samtools
 RUN conda install sambamba
 RUN conda install trimmomatic
-RUN conda install pangolin
+RUN conda install pangolin=3.1.17
 RUN ln -s /opt/conda/lib/libcrypto.so /opt/conda/lib/libcrypto.so.1.0.0
+
+WORKDIR /tmp/
