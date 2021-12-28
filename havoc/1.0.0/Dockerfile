@@ -15,5 +15,5 @@ RUN conda install bcftools
 RUN conda install samtools
 RUN conda install sambamba
 RUN conda install trimmomatic
-RUN conda install pangolin=3.1.10
+RUN conda install pangolin
 RUN ln -s /opt/conda/lib/libcrypto.so /opt/conda/lib/libcrypto.so.1.0.0
