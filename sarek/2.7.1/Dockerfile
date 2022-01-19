@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3:latest
+FROM nfcore/base:1.14
 LABEL author="Venkat S. Malladi"
 
 RUN conda config --add channels defaults && \
@@ -16,7 +16,7 @@ RUN conda install bcftools=1.9=ha228f0b_4
 RUN conda install bwa-mem2=2.0=he513fc3_1
 RUN conda install bwa=0.7.17=hed695b0_7
 RUN conda install cancerit-allelecount=4.0.2=ha228f0b_1
-RUN conda install cnvkit=0.9.6
+RUN conda install cnvkit=0.9.6=py27_1
 RUN conda install control-freec=11.6=he1b5a44_0
 RUN conda install ensembl-vep=99.2=pl526hecc5488_0
 RUN conda install fastqc=0.11.9=0
