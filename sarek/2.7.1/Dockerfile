@@ -1,6 +1,4 @@
-FROM nfcore/base:1.14
-LABEL authors="Maxime Garcia, Szilveszter Juhos" \
-      description="Docker image containing all software requirements for the nf-core/sarek pipeline"
+FROM vsmalladi/vsmbase:1.0.0
 
 RUN conda config --add channels defaults && \
   conda config --add channels bioconda && \
