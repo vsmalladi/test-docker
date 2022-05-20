@@ -4,12 +4,7 @@ images:
       children:
       - null
       parents:
-      - miniconda3:4.9.2-alpine
-  miniconda3:
-    4.9.2-alpine:
-      children:
-      - havoc:1.0.0
-      parents: []
+      - ubuntu:20.04
   python3:
     1.0.0:
       children:
@@ -21,6 +16,10 @@ images:
       children:
       - vsmbase:1.0.0
       - vsmbase:1.0.1
+      parents: []
+    '20.04':
+      children:
+      - havoc:1.0.0
       parents: []
   vsmbase:
     1.0.0:
