@@ -28,7 +28,7 @@ RUN  conda config --add channels bioconda && \
   conda update -n base -y conda
 
 
-RUN conda install pangolin=3.1.17
+RUN conda install pangolin
 RUN conda install bedtools
 RUN conda install bowtie2
 RUN conda install bwa
