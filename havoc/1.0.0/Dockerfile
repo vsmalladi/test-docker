@@ -24,6 +24,7 @@ ENV PATH=/miniconda/bin:${PATH}
 
 RUN  conda config --add channels bioconda && \
   conda config --add channels conda-forge && \
+    conda config --remove channels defaults && \
   conda update -n base -y conda
 
 
