@@ -24,10 +24,10 @@ ENV PATH=/miniconda/bin:${PATH}
 
 RUN  conda config --add channels bioconda && \
   conda config --add channels conda-forge && \
-    conda config --remove channels defaults && \
-  conda update -n base -y conda
+    conda config --remove channels defaults
 
 RUN conda install mamba -n base -c conda-forge
+RUN conda install -c conda-forge biopython
 RUN mamba install -c bioconda pangolin=4.0.2
 RUN conda install bedtools
 RUN conda install bowtie2
