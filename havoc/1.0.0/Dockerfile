@@ -28,7 +28,7 @@ RUN  conda config --add channels bioconda && \
   conda update -n base -y conda
 
 RUN conda install mamba -n base -c conda-forge
-RUN mamba install -c bioconda pangolin
+RUN mamba install -c bioconda pangolin=4.0.2
 RUN conda install bedtools
 RUN conda install bowtie2
 RUN conda install bwa
